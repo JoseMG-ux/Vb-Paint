@@ -249,17 +249,15 @@ Public Class Paint
     End Sub
 
     Public Sub GuardarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GuardarToolStripMenuItem.Click
-        'creando nuevo bitmap
-        Using bm As New Bitmap(Me.Width, Me.Height)
-            'uusando el metodo , se hace una copia en un picturebox
-            Me.DrawToBitmap(bm, New Rectangle(0, 0, Me.Width, Me.Height))
-
-            'lo guarda en  la ubicacion deseada
-            Dim filename = InputBox("Nombre del archivo")
-            bm.Save("C:\Users\" & SystemInformation.UserName & "\Pictures\" & filename & ".png" & "", Imaging.ImageFormat.Png)
-
-
+        Dim tmpImg As New Bitmap(Me.Width, Me.Height)
+        Using g As Graphics = Graphics.FromImage(tmpImg)
+            g.CopyFromScreen(PointToScreen(New Point(0, 0)), New Point(0, 0), New Size(Me.Width, Me.Height))
         End Using
+
+        'lo guarda en  la ubicacion deseada
+        Dim filename = "Captura-" & DateString
+        tmpImg.Save("C:\Users\" & SystemInformation.UserName & "\Pictures\" & filename & ".png" & "", Imaging.ImageFormat.Png)
+
 
     End Sub
 
