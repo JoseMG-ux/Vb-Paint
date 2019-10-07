@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -58,6 +58,136 @@ Namespace My.Resources
             Set
                 resourceCulture = value
             End Set
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Friend ReadOnly Property circle() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("circle", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property circle_16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("circle_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Friend ReadOnly Property eraser() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("eraser", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property eraser_16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("eraser_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icons8_filled_circle_96() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8-filled-circle-96", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icons8_rectangle_stroked_16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8_rectangle_stroked_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Friend ReadOnly Property line() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("line", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property line_16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("line_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Friend ReadOnly Property pencil() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pencil", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pencil_16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pencil_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Friend ReadOnly Property pie() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pie", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pie_16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pie_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Friend ReadOnly Property rectangle1() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("rectangle1", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
         End Property
     End Module
 End Namespace

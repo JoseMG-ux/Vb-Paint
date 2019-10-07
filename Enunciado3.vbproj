@@ -121,6 +121,44 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-filled-circle-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\eraser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\eraser_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8_rectangle_stroked_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\line.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\line_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pencil.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pencil_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pie.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pie_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\rectangle1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\circle.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\circle_16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

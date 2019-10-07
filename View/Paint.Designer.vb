@@ -29,20 +29,12 @@ Partial Class Paint
         Me.GuardarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.PxToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PxToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PxToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
@@ -54,10 +46,21 @@ Partial Class Paint
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Circulo = New System.Windows.Forms.RadioButton()
-        Me.Rectangulo = New System.Windows.Forms.RadioButton()
-        Me.Pie = New System.Windows.Forms.RadioButton()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Linea = New System.Windows.Forms.RadioButton()
+        Me.Pie = New System.Windows.Forms.RadioButton()
+        Me.Rectangulo = New System.Windows.Forms.RadioButton()
+        Me.Circulo = New System.Windows.Forms.RadioButton()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.PxToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PxToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PxToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -78,25 +81,25 @@ Partial Class Paint
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.GuardarToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 23)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(55, 23)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.NuevoToolStripMenuItem.Text = "Nuevo"
         '
         'GuardarToolStripMenuItem
         '
         Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.GuardarToolStripMenuItem.Text = "Guardar"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'ToolStrip1
@@ -107,7 +110,7 @@ Partial Class Paint
         Me.ToolStrip1.GripMargin = New System.Windows.Forms.Padding(2, 5, 2, 2)
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4, Me.ToolStripSeparator1, Me.ToolStripButton3, Me.ToolStripSeparator2, Me.ToolStripDropDownButton1, Me.ToolStripSeparator3, Me.ToolStripButton1, Me.ToolStripSeparator4})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4, Me.ToolStripSeparator1, Me.ToolStripButton3, Me.ToolStripSeparator2, Me.ToolStripDropDownButton1, Me.ToolStripSeparator3, Me.ToolStripButton1, Me.ToolStripSeparator4, Me.ToolStripButton2, Me.ToolStripSeparator5})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 27)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(979, 55)
@@ -115,83 +118,30 @@ Partial Class Paint
         Me.ToolStrip1.TabIndex = 2
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'ToolStripButton4
-        '
-        Me.ToolStripButton4.CheckOnClick = True
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(36, 52)
-        Me.ToolStripButton4.Text = "Pincel"
-        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 55)
-        '
-        'ToolStripButton3
-        '
-        Me.ToolStripButton3.CheckOnClick = True
-        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
-        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(36, 52)
-        Me.ToolStripButton3.Text = "Borrador"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 55)
         '
-        'ToolStripDropDownButton1
-        '
-        Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PxToolStripMenuItem, Me.PxToolStripMenuItem1, Me.PxToolStripMenuItem2})
-        Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
-        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
-        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(45, 52)
-        Me.ToolStripDropDownButton1.Text = "Grosor de lineas"
-        '
-        'PxToolStripMenuItem
-        '
-        Me.PxToolStripMenuItem.Name = "PxToolStripMenuItem"
-        Me.PxToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
-        Me.PxToolStripMenuItem.Text = "20 px"
-        '
-        'PxToolStripMenuItem1
-        '
-        Me.PxToolStripMenuItem1.Name = "PxToolStripMenuItem1"
-        Me.PxToolStripMenuItem1.Size = New System.Drawing.Size(101, 22)
-        Me.PxToolStripMenuItem1.Text = "30 px"
-        '
-        'PxToolStripMenuItem2
-        '
-        Me.PxToolStripMenuItem2.Name = "PxToolStripMenuItem2"
-        Me.PxToolStripMenuItem2.Size = New System.Drawing.Size(101, 22)
-        Me.PxToolStripMenuItem2.Text = "60 px"
-        '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 55)
         '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(36, 52)
-        Me.ToolStripButton1.Text = "ToolStripButton1"
-        Me.ToolStripButton1.ToolTipText = "Rellenar"
-        '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
         Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 55)
+        '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 55)
         '
         'Label1
         '
@@ -200,27 +150,6 @@ Partial Class Paint
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(0, 13)
         Me.Label1.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Location = New System.Drawing.Point(603, 31)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 36)
-        Me.Label2.TabIndex = 4
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label4.Location = New System.Drawing.Point(600, 67)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Color Actual"
         '
         'Panel1
         '
@@ -340,45 +269,145 @@ Partial Class Paint
         Me.Button1.TabIndex = 26
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Circulo
+        'Label2
         '
-        Me.Circulo.Image = CType(resources.GetObject("Circulo.Image"), System.Drawing.Image)
-        Me.Circulo.Location = New System.Drawing.Point(193, 27)
-        Me.Circulo.Name = "Circulo"
-        Me.Circulo.Size = New System.Drawing.Size(62, 53)
-        Me.Circulo.TabIndex = 17
-        Me.Circulo.TabStop = True
-        Me.Circulo.UseVisualStyleBackColor = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label2.Location = New System.Drawing.Point(613, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(59, 36)
+        Me.Label2.TabIndex = 21
         '
-        'Rectangulo
+        'Label4
         '
-        Me.Rectangulo.Image = CType(resources.GetObject("Rectangulo.Image"), System.Drawing.Image)
-        Me.Rectangulo.Location = New System.Drawing.Point(261, 27)
-        Me.Rectangulo.Name = "Rectangulo"
-        Me.Rectangulo.Size = New System.Drawing.Size(62, 53)
-        Me.Rectangulo.TabIndex = 18
-        Me.Rectangulo.TabStop = True
-        Me.Rectangulo.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Location = New System.Drawing.Point(611, 65)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(64, 13)
+        Me.Label4.TabIndex = 22
+        Me.Label4.Text = "Color Actual"
         '
-        'Pie
+        'Panel2
         '
-        Me.Pie.Image = CType(resources.GetObject("Pie.Image"), System.Drawing.Image)
-        Me.Pie.Location = New System.Drawing.Point(329, 27)
-        Me.Pie.Name = "Pie"
-        Me.Pie.Size = New System.Drawing.Size(62, 51)
-        Me.Pie.TabIndex = 19
-        Me.Pie.TabStop = True
-        Me.Pie.UseVisualStyleBackColor = True
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Location = New System.Drawing.Point(206, 27)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(466, 50)
+        Me.Panel2.TabIndex = 27
         '
         'Linea
         '
+        Me.Linea.BackColor = System.Drawing.Color.White
         Me.Linea.Image = CType(resources.GetObject("Linea.Image"), System.Drawing.Image)
-        Me.Linea.Location = New System.Drawing.Point(397, 27)
+        Me.Linea.Location = New System.Drawing.Point(524, 33)
         Me.Linea.Name = "Linea"
-        Me.Linea.Size = New System.Drawing.Size(62, 53)
-        Me.Linea.TabIndex = 20
-        Me.Linea.TabStop = True
-        Me.Linea.UseVisualStyleBackColor = True
+        Me.Linea.Size = New System.Drawing.Size(56, 44)
+        Me.Linea.TabIndex = 26
+        Me.Linea.UseVisualStyleBackColor = False
+        '
+        'Pie
+        '
+        Me.Pie.BackColor = System.Drawing.Color.White
+        Me.Pie.Image = CType(resources.GetObject("Pie.Image"), System.Drawing.Image)
+        Me.Pie.Location = New System.Drawing.Point(336, 29)
+        Me.Pie.Name = "Pie"
+        Me.Pie.Size = New System.Drawing.Size(62, 46)
+        Me.Pie.TabIndex = 25
+        Me.Pie.UseVisualStyleBackColor = False
+        '
+        'Rectangulo
+        '
+        Me.Rectangulo.BackColor = System.Drawing.Color.White
+        Me.Rectangulo.Image = CType(resources.GetObject("Rectangulo.Image"), System.Drawing.Image)
+        Me.Rectangulo.Location = New System.Drawing.Point(429, 29)
+        Me.Rectangulo.Name = "Rectangulo"
+        Me.Rectangulo.Size = New System.Drawing.Size(62, 46)
+        Me.Rectangulo.TabIndex = 24
+        Me.Rectangulo.UseVisualStyleBackColor = False
+        '
+        'Circulo
+        '
+        Me.Circulo.BackColor = System.Drawing.Color.White
+        Me.Circulo.Checked = True
+        Me.Circulo.Image = CType(resources.GetObject("Circulo.Image"), System.Drawing.Image)
+        Me.Circulo.Location = New System.Drawing.Point(252, 31)
+        Me.Circulo.Name = "Circulo"
+        Me.Circulo.Size = New System.Drawing.Size(62, 44)
+        Me.Circulo.TabIndex = 23
+        Me.Circulo.TabStop = True
+        Me.Circulo.UseVisualStyleBackColor = False
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.CheckOnClick = True
+        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.Size = New System.Drawing.Size(36, 52)
+        Me.ToolStripButton4.Text = "Pincel"
+        '
+        'ToolStripButton3
+        '
+        Me.ToolStripButton3.CheckOnClick = True
+        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
+        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton3.Name = "ToolStripButton3"
+        Me.ToolStripButton3.Size = New System.Drawing.Size(36, 52)
+        Me.ToolStripButton3.Text = "Borrador"
+        '
+        'ToolStripDropDownButton1
+        '
+        Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PxToolStripMenuItem, Me.PxToolStripMenuItem1, Me.PxToolStripMenuItem2})
+        Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(45, 52)
+        Me.ToolStripDropDownButton1.Text = "Grosor de lineas"
+        '
+        'PxToolStripMenuItem
+        '
+        Me.PxToolStripMenuItem.Name = "PxToolStripMenuItem"
+        Me.PxToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PxToolStripMenuItem.Text = "20 px"
+        '
+        'PxToolStripMenuItem1
+        '
+        Me.PxToolStripMenuItem1.Name = "PxToolStripMenuItem1"
+        Me.PxToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.PxToolStripMenuItem1.Text = "30 px"
+        '
+        'PxToolStripMenuItem2
+        '
+        Me.PxToolStripMenuItem2.Name = "PxToolStripMenuItem2"
+        Me.PxToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.PxToolStripMenuItem2.Text = "60 px"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.CheckOnClick = True
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(36, 52)
+        Me.ToolStripButton1.Text = "Rellenar"
+        Me.ToolStripButton1.ToolTipText = "Rellenar"
+        '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.CheckOnClick = True
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Image = Global.Enunciado3.My.Resources.Resources.icons8_filled_circle_96
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(36, 52)
+        Me.ToolStripButton2.Text = "ToolStripButton2"
         '
         'Paint
         '
@@ -386,16 +415,17 @@ Partial Class Paint
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(969, 614)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Linea)
         Me.Controls.Add(Me.Pie)
         Me.Controls.Add(Me.Rectangulo)
         Me.Controls.Add(Me.Circulo)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.Panel2)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Paint"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -417,8 +447,6 @@ Partial Class Paint
     Friend WithEvents ToolStripButton3 As ToolStripButton
     Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
@@ -436,12 +464,17 @@ Partial Class Paint
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents NuevoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Circulo As RadioButton
-    Friend WithEvents Rectangulo As RadioButton
-    Friend WithEvents Pie As RadioButton
-    Friend WithEvents Linea As RadioButton
     Friend WithEvents PxToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PxToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents PxToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents GuardarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Linea As RadioButton
+    Friend WithEvents Pie As RadioButton
+    Friend WithEvents Rectangulo As RadioButton
+    Friend WithEvents Circulo As RadioButton
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents ToolStripButton2 As ToolStripButton
+    Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
 End Class
